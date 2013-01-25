@@ -60,7 +60,7 @@ class ProductTest < ActiveSupport::TestCase
                           :description => "yyy",
                           :price => 1,
                           :image_url => "fred.gif")
-    assert product.save,  product.errors[:title].join('; ') 
+    assert !product.save,  product.errors[:title].join('; ') 
     assert_equal "has already been taken", product.errors[:title].join('; ') 
 
   end

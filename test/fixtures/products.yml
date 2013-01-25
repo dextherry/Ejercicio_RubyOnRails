@@ -1,19 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  title: MyString
+  title: zMyString1
   description: MyText
   image_url: MyString
   price: 9.99
 
 two:
-  title: MyString
+  title: zMyString2
   description: MyText
   image_url: MyString
   price: 9.99
-#START:rubye
+#START:ruby
 ruby:
-  title: programing ruby
+  title: Programming Ruby 1.9
   description: ruby is a fastes and more blabla
   price: 49.50
   image_url: ruby.png
