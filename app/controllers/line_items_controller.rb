@@ -88,4 +88,31 @@ class LineItemsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+
+  def decrease
+    @line_item = LineItem.find(params[:id])
+
+    @numero = @line_item.quantity
+
+    if(@numero > 1)
+      @line_item.quantity -= 1
+      @line_item.save
+
+    elsif @numero == 1      
+      @line_item.destroy
+    end
+    @cart = current_cart
+    
+
+    respond_to do |format|
+      
+
+      format.html { redirect_to current_cart, :notice => 'item removidooeoe' }
+      format.js
+
+      format.json { head :no_content }
+    end
+
+  end
 end

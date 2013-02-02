@@ -177,3 +177,9 @@ border-top: 1px dotted #595;
 border-bottom: 1px dotted #595;
 margin-bottom: 10px;
 }
+
+.imageproduct [type="image"]{
+  width: 75px;
+  float: left;
+  text-decoration: none;
+}
