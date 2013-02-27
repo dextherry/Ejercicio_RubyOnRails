@@ -3,7 +3,7 @@
 <% else %>
 <tr>
 <% end %>
-<td class="total_cell"><%= button_to 'v', {:controller => line_items_path, :action => :decrease, :id => line_item.id}, :remote => true %>
+
 </td>
 	<td><%= line_item.quantity %>&times;</td>
 	<td><%= line_item.product.title %></td>

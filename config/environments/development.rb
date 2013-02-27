@@ -36,4 +36,17 @@ Depot::Application.configure do
   config.assets.debug = true
   #config.action_view.debug_rjs = true
 
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+  :address              => "smtp.gmail.com",
+  :port                 => 587,
+  :domain               => 'http://google.com',
+  :user_name            => 'dexter00y@gmail.com',
+  :password             => 'meteoroparay',
+  :authentication       => 'plain',
+  :enable_starttls_auto => true  }
+    config.action_mailer.perform_deliveries = true
+
+
+
 end
